@@ -4,60 +4,27 @@ var mainBtn=document.querySelector("#clickbtn")
 var outputdiv=document.querySelector("#output")
 
 var monthDays=[31,29,31,30,31,30,31,31,30,31,30,31]
+var sum=0;
+
 
 function check(){
     var enteredDob=userDob.value;
-    var Dob=enteredDob.split("/")
-    var date=Dob[0]
-    var month=Dob[1]
-    var year=Dob[2]
-    var luckyNos=userLuckyNos.value
+    console.log(typeof(enteredDob))
+    // console.log(enteredDob.charAt(3))
+    console.log(enteredDob)
+    var split=enteredDob.split("-")
+    console.log(typeof(Number(split[0])))
+    for(var i=0;i<split.length;i++){
 
-    if(isNaN(date)||isNaN(month)||isNaN(year)||isNaN(luckyNos)){
-
-   
-        invalidInput()
-        
-         
-     }
-        else if(date<=0||date>31||month<=0||month>12||year<1000||year>9999){
-     
-         
-         invalidInput()
-        
-     }
-     else if(date>monthDays[month-1]){
-         
-         invalidInput()
-     }
-        
-     else if(!Number.isInteger(Number(date)) || !Number.isInteger(Number(month))||!Number.isInteger(Number(year))||!Number.isInteger(Number(luckyNos))){
-     
-         
-         invalidInput()
-         
-     }
-     else{
-
-    var addDob=Number(date)+Number(month)+Number(year)
-    
-      
-    if(addDob%luckyNos==0){
-        outputdiv.innerText="Whatttawowww"
-    }else{
-        outputdiv.innerText="Hmmm...Your DOB is not completely divisible by your lucky nos!"
-    }
+        console.log(split[i])
+    sum=sum+(Number(split[i]))
+  
 }
+console.log(sum)
+
     
     
 }
-
 
 
 mainBtn.addEventListener("click",check)
-function invalidInput(){
-    
-    alert("Invalid Input")
-    output.innerText=""
-    
-}
