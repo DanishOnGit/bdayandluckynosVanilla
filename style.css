@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+}
+.navbar{
+    font-size: 3rem;
+    padding: 2rem;
+    background-color: blueviolet;
+}
+input{
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    outline: none;
+}
+button{
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: coral;
+    margin: 1rem;
+}
+
+#output{
+    width: 40vw;
+    height: 5vh;
+    border: 1px solid black;
+    margin-top: 2rem;
+    margin: auto;
+}
