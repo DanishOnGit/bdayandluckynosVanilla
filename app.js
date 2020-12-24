@@ -14,13 +14,16 @@ function check(){
     console.log(enteredDob)
     var split=enteredDob.split("-")
     console.log(typeof(Number(split[0])))
-    for(var i=0;i<split.length;i++){
+    var num1=split[0].split("")
+    var num2=split[1].split("")
+    var num3=split[2].split("")
+    // console.log(num1)
+    var newarray=num1.concat(num2)
+    console.log(newarray)
+    var finalarray=newarray.concat(num3)
+    console.log(finalarray)
+    
 
-        console.log(split[i])
-    sum=sum+(Number(split[i]))
-  
-}
-console.log(sum)
 
     
     
