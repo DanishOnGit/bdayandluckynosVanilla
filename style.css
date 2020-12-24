@@ -13,16 +13,9 @@ body{
     text-align: center;
     width: 100%;
 }
-/* .contentwrap{
+.contentwrap{
     margin-top: 3rem ;
-    margin-left: 25%;
-    border: 0.2rem solid white;
-    padding: 0.5rem;
-    width: 50vw;
-    border-radius: 1rem;
-    
-    
-} */
+}
 .navbar{
     font-size: 3rem;
     padding: 2rem;
@@ -37,6 +30,7 @@ input{
     border-radius: 1rem;
     outline: none;
 }
+p{color: white;}
 button{
     padding: 1rem 2rem;
     border-radius: 1rem;

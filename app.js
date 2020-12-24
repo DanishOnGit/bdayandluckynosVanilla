@@ -3,11 +3,13 @@ var userLuckyNos=document.querySelector("#inputtexttwo")
 var mainBtn=document.querySelector("#clickbtn")
 var outputdiv=document.querySelector("#output")
 
-var monthDays=[31,29,31,30,31,30,31,31,30,31,30,31]
 var sum=0;
 
-
 function check(){
+    if(userDob.value=="" || userLuckyNos.value==""){
+        alert("Please fill both fields")
+    }
+    else{
     var enteredDob=userDob.value;
     
     var split=enteredDob.split("-")
@@ -30,15 +32,14 @@ function check(){
     console.log(sum)
     
     if(sum%luckynos==0){
-        outputdiv.innerText="Whatttawowww!! Your DOB is a lucky day!"
+        outputdiv.innerText="Whatttawowww!! Your birthday is a lucky day!"
     }else{
-        outputdiv.innerText="Hmmmm...Your DOB is not your lucky day"
+        outputdiv.innerText="Hmmmm...Your birthday is not your lucky day"
     }
-    
-    sum=0;
 
+    sum=0;
+}
     
 }
-
 
 mainBtn.addEventListener("click",check)
