@@ -67,13 +67,16 @@ a{
     color: rgb(243, 113, 26);
     border-radius: 1rem;
 }
-.mainnotice{
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.noticediv{
     border: 1px solid red;
     width: 20rem;
     padding:1rem;
     margin: auto;
+    display: flex;
+}
+.mainnotice{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 strong{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -83,7 +86,10 @@ strong{
     color: rgb(126, 3, 3);
     
 }
-.fas {
+.xyz {
     cursor: pointer;
+    color: white;
+    
 }
+
 
