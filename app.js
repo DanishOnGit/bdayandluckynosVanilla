@@ -34,7 +34,7 @@ function check(){
     if(sum%luckynos==0){
         outputdiv.innerText="Whatttawowww!! Your birthday is a lucky day!"
     }else{
-        outputdiv.innerText="Hmmmm...Your birthday is not your lucky day"
+        outputdiv.innerText="Hmmmm...Your birthday is not your lucky day!"
     }
 
     sum=0;

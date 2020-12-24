@@ -8,6 +8,7 @@
 }
 body{
     background-color: rgb(5, 5, 5);
+    width: 100%;
 }
 .container{
     text-align: center;
@@ -23,6 +24,7 @@ body{
     font-family: 'Bangers', cursive;
     color: rgb(243, 113, 26);
     letter-spacing: 0.2rem;
+    /* width: 100%; */
 }
 input{
     padding: 1rem 4rem;
@@ -42,8 +44,47 @@ button{
     outline: none;
 }
 #output{
-    color: white;
+    color: rgb(243, 113, 26);;
     letter-spacing: 0.2rem;
     font-size: 1.5rem;
+}
+footer{
+    background-color: rgb(133, 10, 248);
+    padding: 2rem ;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    font-size: 2rem;
+    padding: 1rem;
+    
+}
+a{
+    color: rgb(243, 113, 26);
+    border-radius: 1rem;
+}
+.mainnotice{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid red;
+    width: 20rem;
+    padding:1rem;
+    margin: auto;
+}
+strong{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.privacy{
+    color: rgb(126, 3, 3);
+    margin-top: 1rem;
+}
+.fas fa-times {
+    cursor: pointer;
+
 }
 
