@@ -73,6 +73,7 @@ a{
     padding:1rem;
     margin: auto;
     display: flex;
+    align-items: center;
 }
 .mainnotice{
     color: white;
