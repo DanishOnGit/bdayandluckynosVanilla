@@ -9,23 +9,31 @@ var sum=0;
 
 function check(){
     var enteredDob=userDob.value;
-    console.log(typeof(enteredDob))
-    // console.log(enteredDob.charAt(3))
-    console.log(enteredDob)
+    
     var split=enteredDob.split("-")
-    console.log(typeof(Number(split[0])))
+    
     var num1=split[0].split("")
     var num2=split[1].split("")
     var num3=split[2].split("")
-    // console.log(num1)
+    
     var newarray=num1.concat(num2)
-    console.log(newarray)
+    
     var finalarray=newarray.concat(num3)
-    console.log(finalarray)
     
-
-
+    var luckynos=userLuckyNos.value
     
+    for(var i=0;i<finalarray.length;i++){
+
+        sum=sum+(Number(finalarray[i]))
+
+    }
+    
+    if(sum%luckynos==0){
+        outputdiv.innerText="Whatttawowww!! Your DOB is a lucky day!"
+    }else{
+        outputdiv.innerText="Hmmmm...Your DOB is not your lucky day"
+    }
+
     
 }
 
