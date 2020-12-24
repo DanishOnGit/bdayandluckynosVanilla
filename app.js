@@ -27,12 +27,15 @@ function check(){
         sum=sum+(Number(finalarray[i]))
 
     }
+    console.log(sum)
     
     if(sum%luckynos==0){
         outputdiv.innerText="Whatttawowww!! Your DOB is a lucky day!"
     }else{
         outputdiv.innerText="Hmmmm...Your DOB is not your lucky day"
     }
+    
+    sum=0;
 
     
 }
