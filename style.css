@@ -81,10 +81,9 @@ strong{
 
 .privacy{
     color: rgb(126, 3, 3);
-    margin-top: 1rem;
+    
 }
-.fas fa-times {
+.fas {
     cursor: pointer;
-
 }
 

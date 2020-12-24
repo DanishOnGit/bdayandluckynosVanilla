@@ -2,6 +2,9 @@ var userDob=document.querySelector("#inputtext")
 var userLuckyNos=document.querySelector("#inputtexttwo")
 var mainBtn=document.querySelector("#clickbtn")
 var outputdiv=document.querySelector("#output")
+var cross=document.querySelector(".fas")
+var toggle=document.querySelector(".noticediv")
+var policy=document.querySelector(".privacy")
 
 var sum=0;
 
@@ -43,3 +46,12 @@ function check(){
 }
 
 mainBtn.addEventListener("click",check)
+
+cross.addEventListener("click",invisible)
+function invisible (){
+  toggle.style.display="none";
+}
+policy.addEventListener("click",visible)
+function visible(){
+    toggle.style.display="block"
+}
