@@ -94,4 +94,10 @@ strong{
     
 }
 
+@media only screen and (max-width:600px){
+    #happy,#sad{
+        width:300px ;
+    }
+}
+
 
