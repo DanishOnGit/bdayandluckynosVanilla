@@ -95,10 +95,7 @@ strong{
 }
 
 @media only screen and (max-width:600px){
-    #happy {
-        width:300px ;
-    }
-    #sad{
+    img{
         width: 300px;
     }
 }
