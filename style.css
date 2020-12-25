@@ -31,6 +31,7 @@ input{
     margin: 1rem;
     border-radius: 1rem;
     outline: none;
+    border: none;
 }
 p{color: rgb(243, 113, 26);}
 button{
