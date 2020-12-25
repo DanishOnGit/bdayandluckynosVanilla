@@ -5,6 +5,8 @@ var outputdiv=document.querySelector("#output")
 var cross=document.querySelector(".fas")
 var toggle=document.querySelector(".noticediv")
 var policy=document.querySelector(".privacy")
+var happyimg=document.querySelector("#happy")
+var sadimg=document.querySelector("#sad")
 
 var sum=0;
 
@@ -36,8 +38,13 @@ function check(){
     
     if(sum%luckynos==0){
         outputdiv.innerText="Whatttawowww!! Your birthday is a lucky day!"
+        happyimg.style.display="block"
+        sadimg.style.display="none"
     }else{
         outputdiv.innerText="Hmmmm...Your birthday is not your lucky day!"
+        happyimg.style.display="none"
+        sadimg.style.display="block"
+        
     }
 
     sum=0;
