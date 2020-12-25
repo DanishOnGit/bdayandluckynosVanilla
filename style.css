@@ -54,6 +54,7 @@ footer{
     box-sizing: border-box;
     margin-top: 2rem;
     width: 100%;
+    
 }
 
 li{
@@ -86,6 +87,7 @@ strong{
 
 .privacy{
     color: rgb(126, 3, 3);
+    margin-top: 3rem;
     
 }
 .xyz {

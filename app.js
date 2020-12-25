@@ -28,7 +28,15 @@ function check(){
     var finalarray=newarray.concat(num3)
     
     var luckynos=userLuckyNos.value
-    
+    if(isNaN(luckynos)){
+        
+        alert("Please enter a valid number.")
+        outputdiv.innerText=""
+        happyimg.style.display="none"
+        sadimg.style.display="none"
+        
+    }
+    else{
     for(var i=0;i<finalarray.length;i++){
 
         sum=sum+(Number(finalarray[i]))
@@ -48,7 +56,7 @@ function check(){
     }
 
     sum=0;
-}
+}}
     
 }
 
@@ -60,5 +68,5 @@ function invisible (){
 }
 policy.addEventListener("click",visible)
 function visible(){
-    toggle.style.display="block"
+    toggle.style.display="flex"
 }
