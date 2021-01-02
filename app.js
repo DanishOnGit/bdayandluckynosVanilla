@@ -28,6 +28,7 @@ function check(){
     var finalarray=newarray.concat(num3)
     
     var luckynos=userLuckyNos.value
+    console.log(typeof(luckynos))
     if(isNaN(luckynos)){
         
         alert("Please enter a valid number.")
@@ -44,7 +45,7 @@ function check(){
     }
     console.log(sum)
     
-    if(sum%luckynos==0){
+    if(sum%Number(luckynos)==0){
         outputdiv.innerText="Whatttawowww!! Your birthday is a lucky day!"
         happyimg.style.display="block"
         sadimg.style.display="none"
